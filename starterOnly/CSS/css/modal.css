@@ -533,6 +533,7 @@ input {
   height: 100%;
   display: block;
   padding: 0;
+  object-fit: cover;
 }
 
 .copyrights {
@@ -553,7 +554,8 @@ footer {
   margin: 0 20px;
 }
 
-@media screen and (max-width: 800px) {
+/* change max-width from 800px to 992px */
+@media screen and (max-width: 992px) {
   .hero-section {
     display: block;
     box-shadow: unset;
