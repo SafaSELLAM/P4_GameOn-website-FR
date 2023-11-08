@@ -100,6 +100,7 @@
                   name="email"
                 /><br>
               </div>
+              <!-- add attributes required pattern to control date format -->
               <div
                 class="formData" data-error="La date de naissance n'est pas valide.">
                 <label for="birthdate">Date de naissance</label><br>
@@ -108,13 +109,13 @@
                   type="date"
                   id="birthdate"
                   name="birthdate"
-                required pattern="\d{4}-\d{2}-\d{2}"
+                required pattern="\d{4}-\d{2}-\d{2}" 
                 /><br>
               </div>
               <div
                 class="formData" data-error="Le nombre de concours doit être une valeur numérique.">
                 <label for="quantity">À combien de tournois GameOn avez-vous déjà participé ?</label><br>
-                <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99" value="0" oninput="this.value = this.valueAsNumber">
+                <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99" value="0">
               </div>
               <p class="text-label">A quel tournoi souhaitez-vous participer cette année ?</p>
               <div

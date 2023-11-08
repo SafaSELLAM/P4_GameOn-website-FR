@@ -46,10 +46,10 @@ function validate(event) {
     return !!emailPattern.test(email.value);
   });
 
-  //controlbirthdate min age =18 and max =65
+  //control birthdate min age =18 and max =100
   validateField(birthdate, () => {
     const minAge = 18;
-    const maxAge = 65;
+    const maxAge = 100;
     const birthdateInput = document.getElementById("birthdate");
     const currentDate = new Date();
     const maxDate = new Date(
@@ -103,3 +103,11 @@ function validate(event) {
 const submit = document.getElementById("button-submit");
 
 submit.addEventListener("click", validate);
+
+// prevent user to write any other characters than numbers in the field quantity
+document
+  .getElementById("quantity")
+  .addEventListener(
+    "input",
+    (event) => (event.target.value = event.target.valueAsNumber)
+  );
