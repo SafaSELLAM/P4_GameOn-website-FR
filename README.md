@@ -1,5 +1,2 @@
 # Projet GameOn
-1. Forkez ce repo ;
-2. Il est conseillé d'utiliser VisualStudio Code et vous pouvez utiliser Docker, mais ce n'est pas obligatoire ;
-3. Il n'y a aucune dépendance ;
-4. Vous ne devez utiliser que du CSS personnalisé et du JavaScript pur, sans jQuery, Bootstrap ou autre librairie.
+Quatrième projet étudiants d'OpenClassrooms du parcours react javascript consistant à venir complétez les fonctionnalités du formulaires en le rendant dynamiques et venir ajouter des contrôles au niveau des champs remplis.
